@@ -4,112 +4,148 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Practice</title>
+    <title>Technology Cards</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
 </head>
 
-<body>
-    <!-- Cards Container -->
-    <section class="flex flex-wrap justify-center gap-6 p-6">
+<body class="min-h-screen bg-slate-100">
 
-        <!-- HTML Card -->
-        <div
-            class="w-[250px] h-[280px] bg-linear-30 from-[#e44d26] to-[#ff8049] p-[20px] border border-[#e44d26] rounded-2xl shadow-lg space-y-5 text-center">
-
-            <h2 class="font-bold text-white">
-                HTML Card
-            </h2>
-            <hr>
-            <p class="text-[12px] text-white">
-                This is a simple HTML card. Here I practice using utility classes to create a clean, responsive, and
-                modern card design.
+    <!-- Main Section -->
+    <section class="min-h-screen px-4 py-10 sm:px-6 sm:py-14 lg:px-8">
+        <!-- Heading -->
+        <div class="text-center mb-10 sm:mb-12">
+            <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-800 mb-3">
+                My Technology Stack
+            </h1>
+            <p class="max-w-xl mx-auto text-sm sm:text-base text-slate-500">
+                Practicing Tailwind CSS by creating attractive and responsive technology cards.
             </p>
-            <button class="bg-[#7c210a] text-white p-2 rounded-xl mt-2">
-                Learn More
-            </button>
         </div>
 
 
-        <!-- Tailwind Card -->
-        <div
-            class="w-[250px] h-[280px] bg-linear-30 from-[#38bdf8] to-[#3178c6] p-[20px] border border-[#3178c6] rounded-2xl shadow-lg space-y-5 text-center">
-            <h2 class="font-bold text-white">
-                Tailwind Card
-            </h2>
-            <hr>
-            <p class="text-[12px] text-white">
-                This is a simple Tailwind CSS card. Here I practice using utility classes to create a clean,
-                responsive, and modern card design.
-            </p>
-            <button class="bg-blue-900 text-white p-2 rounded-xl mt-2">
-                Learn More
-            </button>
-        </div>
+        <!-- Cards Container -->
+        <div class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
 
 
-        <!-- CSS Card -->
-        <div
-            class="w-[250px] h-[280px] bg-linear-30 from-[#264de4] to-[#2965f1] p-[20px] border border-[#264de4] rounded-2xl shadow-lg space-y-5 text-center">
-            <h2 class="font-bold text-white">
-                CSS Card
-            </h2>
-            <hr>
-            <p class="text-[12px] text-white">
-                This is a simple CSS card. Here I practice styling, layout, spacing, colors, and responsive design.
-            </p>
-            <button class="bg-blue-900 text-white p-2 rounded-xl mt-5">
-                Learn More
-            </button>
-        </div>
+            <!-- HTML Card -->
+            <div
+                class="w-full bg-linear-to-br from-orange-500 to-red-500 p-6 rounded-2xl shadow-lg text-center transition duration-300 hover:-translate-y-2 hover:shadow-2xl">
+                <div class="w-16 h-16 mx-auto mb-5 rounded-full bg-white/20 flex items-center justify-center text-3xl">
+                    🌐
+                </div>
+                <h2 class="font-bold text-2xl text-white mb-3">
+                    HTML
+                </h2>
+                <hr class="border-white/30 mb-4">
+                <p class="text-sm text-white/90 leading-relaxed">
+                    The structure of modern web pages using semantic HTML elements.
+                </p>
+                <button
+                    class="mt-6 bg-white text-orange-600 font-semibold px-5 py-2 rounded-lg hover:bg-orange-50 transition duration-300">
+                    Learn More
+                </button>
+            </div>
 
 
-        <!-- JavaScript Card -->
-        <div
-            class="w-[250px] h-[280px] bg-linear-30 from-[#f7df1e] to-[#f0c000] p-[20px] border border-yellow-500 rounded-2xl shadow-lg space-y-5 text-center">
-            <h2 class="font-bold text-gray-900">
-                JavaScript Card
-            </h2>
-            <hr>
-            <p class="text-[12px] text-gray-900">
-                This is a simple JavaScript card. Here I practice logic, functions, arrays, objects, and DOM
-                manipulation.
-            </p>
-            <button class="bg-gray-900 text-white p-2 rounded-xl mt-2">
-                Learn More
-            </button>
-        </div>
+            <!-- CSS Card -->
+            <div
+                class="w-full bg-linear-to-br from-blue-600 to-indigo-600 p-6 rounded-2xl shadow-lg text-center transition duration-300 hover:-translate-y-2 hover:shadow-2xl">
+                <div class="w-16 h-16 mx-auto mb-5 rounded-full bg-white/20 flex items-center justify-center text-3xl">
+                    🎨
+                </div>
+                <h2 class="font-bold text-2xl text-white mb-3">
+                    CSS
+                </h2>
+                <hr class="border-white/30 mb-4">
+                <p class="text-sm text-white/90 leading-relaxed">
+                    Styling, layout, colors, spacing, and responsive web design.
+                </p>
+                <button
+                    class="mt-6 bg-white text-blue-700 font-semibold px-5 py-2 rounded-lg hover:bg-blue-50 transition duration-300">
+                    Learn More
+                </button>
+            </div>
 
 
-        <!-- React Card -->
-        <div
-            class="w-[250px] h-[280px] bg-linear-30 from-[#61dafb] to-[#087ea4] p-[20px] border border-cyan-500 rounded-2xl shadow-lg space-y-5 text-center">
-            <h2 class="font-bold text-white">
-                React Card
-            </h2>
-            <hr>
-            <p class="text-[12px] text-white">
-                This is a simple React card. Here I practice components, props, state, hooks, and reusable UI.
-            </p>
-            <button class="bg-cyan-950 text-white p-2 rounded-xl mt-2">
-                Learn More
-            </button>
-        </div>
+            <!-- Tailwind Card -->
+            <div
+                class="w-full bg-linear-to-br from-cyan-400 to-sky-600 p-6 rounded-2xl shadow-lg text-center transition duration-300 hover:-translate-y-2 hover:shadow-2xl">
+                <div class="w-16 h-16 mx-auto mb-5 rounded-full bg-white/20 flex items-center justify-center text-3xl">
+                    🌊
+                </div>
+                <h2 class="font-bold text-2xl text-white mb-3">
+                    Tailwind CSS
+                </h2>
+                <hr class="border-white/30 mb-4">
+                <p class="text-sm text-white/90 leading-relaxed">
+                    Building modern interfaces using utility-first CSS classes.
+                </p>
+                <button
+                    class="mt-6 bg-white text-cyan-700 font-semibold px-5 py-2 rounded-lg hover:bg-cyan-50 transition duration-300">
+                    Learn More
+                </button>
+            </div>
 
 
-        <!-- Node.js Card -->
-        <div
-            class="w-[250px] h-[280px] bg-linear-30 from-[#68a063] to-[#3c873a] p-[20px] border border-green-600 rounded-2xl shadow-lg space-y-5 text-center">
-            <h2 class="font-bold text-white">
-                Node.js Card
-            </h2>
-            <hr>
-            <p class="text-[12px] text-white">
-                This is a simple Node.js card. Here I practice server-side JavaScript, APIs, modules, and backend
-                development.
-            </p>
-            <button class="bg-green-950 text-white p-2 rounded-xl mt-2">
-                Learn More
-            </button>
+            <!-- JavaScript Card -->
+            <div
+                class="w-full bg-linear-to-br from-yellow-300 to-amber-400 p-6 rounded-2xl shadow-lg text-center transition duration-300 hover:-translate-y-2 hover:shadow-2xl">
+                <div class="w-16 h-16 mx-auto mb-5 rounded-full bg-black/10 flex items-center justify-center text-3xl">
+                    ⚡
+                </div>
+                <h2 class="font-bold text-2xl text-slate-900 mb-3">
+                    JavaScript
+                </h2>
+                <hr class="border-slate-900/20 mb-4">
+                <p class="text-sm text-slate-800/80 leading-relaxed">
+                    Adding logic, interaction, dynamic behavior, and functionality to websites.
+                </p>
+                <button
+                    class="mt-6 bg-slate-900 text-white font-semibold px-5 py-2 rounded-lg hover:bg-slate-800 transition duration-300">
+                    Learn More
+                </button>
+            </div>
+
+
+            <!-- React Card -->
+            <div
+                class="w-full bg-linear-to-br from-cyan-400 to-blue-600 p-6 rounded-2xl shadow-lg text-center transition duration-300 hover:-translate-y-2 hover:shadow-2xl">
+                <div class="w-16 h-16 mx-auto mb-5 rounded-full bg-white/20 flex items-center justify-center text-3xl">
+                    ⚛️
+                </div>
+                <h2 class="font-bold text-2xl text-white mb-3">
+                    React
+                </h2>
+                <hr class="border-white/30 mb-4">
+                <p class="text-sm text-white/90 leading-relaxed">
+                    Creating reusable components and interactive user interfaces.
+                </p>
+                <button
+                    class="mt-6 bg-white text-blue-700 font-semibold px-5 py-2 rounded-lg hover:bg-blue-50 transition duration-300">
+                    Learn More
+                </button>
+            </div>
+
+
+            <!-- Node.js Card -->
+            <div
+                class="w-full bg-linear-to-br from-lime-500 to-green-600 p-6 rounded-2xl shadow-lg text-center transition duration-300 hover:-translate-y-2 hover:shadow-2xl">
+                <div class="w-16 h-16 mx-auto mb-5 rounded-full bg-white/20 flex items-center justify-center text-3xl">
+                    🟢
+                </div>
+                <h2 class="font-bold text-2xl text-white mb-3">
+                    Node.js
+                </h2>
+                <hr class="border-white/30 mb-4">
+                <p class="text-sm text-white/90 leading-relaxed">
+                    Building backend applications, APIs, and server-side JavaScript.
+                </p>
+                <button
+                    class="mt-6 bg-white text-green-700 font-semibold px-5 py-2 rounded-lg hover:bg-green-50 transition duration-300">
+                    Learn More
+                </button>
+            </div>
         </div>
 
     </section>
